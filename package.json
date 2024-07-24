@@ -1,0 +1,46 @@
+{
+  "name": "soham-s-copilot",
+  "displayName": "Groq Copilot",
+  "publisher": "sohammhatre521",
+  "description": "Code generator using groq llama-3 api",
+  "repository": {"url": "https://github.com/Sohammhatre10/Groq-Copilot-Extension.git"},
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.91.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "soham-s-copilot.helloWorld",
+        "title": "Hello World"
+      },
+      {
+        "command": "soham-s-copilot.processCode",
+        "title": "Process Code"
+      }
+    ]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.7",
+    "@types/node": "20.x",
+    "@types/vscode": "^1.91.0",
+    "@vscode/test-cli": "^0.0.9",
+    "@vscode/test-electron": "^2.4.0",
+    "eslint": "^8.57.0",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "@langchain/groq": "^0.0.15",
+    "dotenv": "^16.4.5",
+    "langchain": "^0.2.10"
+  }
+}
