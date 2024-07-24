@@ -1,4 +1,4 @@
-# Soham's Copilot
+# Groq-Copilot
 
 Soham's Copilot is a Visual Studio Code extension that integrates with the LangChain API and Groq model llama-3 to provide code suggestions and corrections. The extension offers two primary commands: "Hello World" and "Process Code".
 
